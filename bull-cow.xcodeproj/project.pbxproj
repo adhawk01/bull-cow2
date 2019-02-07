@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE37B5E322074D8E00CEF26B /* makeAGuess.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE37B5E222074D8E00CEF26B /* makeAGuess.swift */; };
 		CE5944D3220380F100C15EC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5944D2220380F100C15EC1 /* AppDelegate.swift */; };
 		CE5944D5220380F100C15EC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5944D4220380F100C15EC1 /* ViewController.swift */; };
 		CE5944D8220380F100C15EC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5944D6220380F100C15EC1 /* Main.storyboard */; };
-		CE5944DA220380F600C15EC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5944D9220380F600C15EC1 /* Assets.xcassets */; };
 		CE5944DD220380F600C15EC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5944DB220380F600C15EC1 /* LaunchScreen.storyboard */; };
+		CEF3F992220B1A1300A6D428 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5944D9220380F600C15EC1 /* Assets.xcassets */; };
+		CEF5D57E2204F8A20064840F /* guessClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5D57D2204F8A20064840F /* guessClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE37B5E222074D8E00CEF26B /* makeAGuess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = makeAGuess.swift; sourceTree = "<group>"; };
 		CE5944CF220380F100C15EC1 /* bull-cow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bull-cow.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE5944D2220380F100C15EC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE5944D4220380F100C15EC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		CE5944D9220380F600C15EC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE5944DC220380F600C15EC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE5944DE220380F600C15EC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEF5D57D2204F8A20064840F /* guessClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = guessClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE2BD0EA2208D9B50047B0B6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE37B5E222074D8E00CEF26B /* makeAGuess.swift */,
+				CEF5D57D2204F8A20064840F /* guessClass.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE2BD0EB2208D9DC0047B0B6 /* Controler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controler;
+			sourceTree = "<group>";
+		};
 		CE5944C6220380F100C15EC1 = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +74,8 @@
 		CE5944D1220380F100C15EC1 /* bull-cow */ = {
 			isa = PBXGroup;
 			children = (
+				CE2BD0EB2208D9DC0047B0B6 /* Controler */,
+				CE2BD0EA2208D9B50047B0B6 /* Model */,
 				CE5944D2220380F100C15EC1 /* AppDelegate.swift */,
 				CE5944D4220380F100C15EC1 /* ViewController.swift */,
 				CE5944D6220380F100C15EC1 /* Main.storyboard */,
@@ -123,7 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE5944DD220380F600C15EC1 /* LaunchScreen.storyboard in Resources */,
-				CE5944DA220380F600C15EC1 /* Assets.xcassets in Resources */,
+				CEF3F992220B1A1300A6D428 /* Assets.xcassets in Resources */,
 				CE5944D8220380F100C15EC1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,7 +158,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE5944D5220380F100C15EC1 /* ViewController.swift in Sources */,
+				CE37B5E322074D8E00CEF26B /* makeAGuess.swift in Sources */,
 				CE5944D3220380F100C15EC1 /* AppDelegate.swift in Sources */,
+				CEF5D57E2204F8A20064840F /* guessClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,8 +304,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8B382R25C4;
 				INFOPLIST_FILE = "bull-cow/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -289,7 +316,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "none.bull-cow";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -297,8 +324,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8B382R25C4;
 				INFOPLIST_FILE = "bull-cow/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +336,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "none.bull-cow";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
